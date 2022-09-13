@@ -1,0 +1,687 @@
+{
+	"info": {
+		"_postman_id": "cd137093-84f5-4827-a350-0b07f7ce79c2",
+		"name": "Binance Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22546941"
+	},
+	"item": [
+		{
+			"name": "Get information of my account",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-MBX-APIKEY",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v3/account?timestamp={{timestamp}}&signature={{signature}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"account"
+					],
+					"query": [
+						{
+							"key": "timestamp",
+							"value": "{{timestamp}}"
+						},
+						{
+							"key": "signature",
+							"value": "{{signature}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get information of my account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-MBX-APIKEY",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v3/account?timestamp={{timestamp}}&signature={{signature}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"account"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								},
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "253"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 14:21:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-mbx-uuid",
+							"value": "4d8ee4e2-e497-412b-839e-b6d5e6575b63"
+						},
+						{
+							"key": "x-mbx-used-weight",
+							"value": "11"
+						},
+						{
+							"key": "x-mbx-used-weight-1m",
+							"value": "11"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "X-Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "X-WebKit-CSP",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ab80dbea0300e42fb1524d6c95942bb8.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "CGK50-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "R1G58xDSI-ULVamXpbMHXaKE5T32lHQpvN5sLNMnM5Yo6TTDWYSFLw=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"makerCommission\": 0,\n    \"takerCommission\": 0,\n    \"buyerCommission\": 0,\n    \"sellerCommission\": 0,\n    \"canTrade\": true,\n    \"canWithdraw\": false,\n    \"canDeposit\": false,\n    \"brokered\": false,\n    \"updateTime\": 1663075014747,\n    \"accountType\": \"SPOT\",\n    \"balances\": [\n        {\n            \"asset\": \"BNB\",\n            \"free\": \"1000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"BTC\",\n            \"free\": \"1.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"BUSD\",\n            \"free\": \"10000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"ETH\",\n            \"free\": \"100.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"LTC\",\n            \"free\": \"500.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"TRX\",\n            \"free\": \"500000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"USDT\",\n            \"free\": \"10000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"XRP\",\n            \"free\": \"50000.00000000\",\n            \"locked\": \"0.00000000\"\n        }\n    ],\n    \"permissions\": [\n        \"SPOT\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get BTCUSDT",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-MBX-APIKEY",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v1/klines?symbol=BTCUSDT&limit=1&interval=1m",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"klines"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTCUSDT"
+						},
+						{
+							"key": "limit",
+							"value": "1",
+							"description": "Default 500; max 1500."
+						},
+						{
+							"key": "interval",
+							"value": "1m",
+							"description": "1m, 1h, 1d, etc"
+						},
+						{
+							"key": "startTime",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "endTime",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get BTCUSDT",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-MBX-APIKEY",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/klines?symbol=BTCUSDT&limit=1&interval=1m",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"klines"
+							],
+							"query": [
+								{
+									"key": "symbol",
+									"value": "BTCUSDT"
+								},
+								{
+									"key": "limit",
+									"value": "1",
+									"description": "Default 500; max 1500."
+								},
+								{
+									"key": "interval",
+									"value": "1m",
+									"description": "1m, 1h, 1d, etc"
+								},
+								{
+									"key": "startTime",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "endTime",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "165"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 14:22:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-mbx-uuid",
+							"value": "0c800f25-49c7-4f5a-86c8-ac374143cd90"
+						},
+						{
+							"key": "x-mbx-used-weight",
+							"value": "2"
+						},
+						{
+							"key": "x-mbx-used-weight-1m",
+							"value": "2"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "X-Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "X-WebKit-CSP",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ab80dbea0300e42fb1524d6c95942bb8.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "CGK50-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "bp8OyezIVP-5pr2sQPQ0hGKLu4R3DJKhoSuoKf291tQnBEm4oNny-Q=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        1663078920000,\n        \"21196.60000000\",\n        \"21196.94000000\",\n        \"21192.62000000\",\n        \"21192.62000000\",\n        \"1.58331500\",\n        1663078979999,\n        \"33559.24885890\",\n        30,\n        \"0.34718800\",\n        \"7359.10706306\",\n        \"0\"\n    ]\n]"
+				}
+			]
+		},
+		{
+			"name": "Get BTCUSDT 1000 BTCUSDT",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-MBX-APIKEY",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v1/klines?symbol=BTCUSDT&limit=1000&interval=1h&startTime=1661965200000&endTime=1662569940000",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"klines"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTCUSDT"
+						},
+						{
+							"key": "limit",
+							"value": "1000",
+							"description": "Default 500; max 1500."
+						},
+						{
+							"key": "interval",
+							"value": "1h",
+							"description": "1m, 1h, 1d, etc"
+						},
+						{
+							"key": "startTime",
+							"value": "1661965200000",
+							"description": "1 September in MS"
+						},
+						{
+							"key": "endTime",
+							"value": "1662569940000",
+							"description": "7 September in MS"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get BTCUSDT 1000 BTCUSDT",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-MBX-APIKEY",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/klines?symbol=BTCUSDT&limit=1000&interval=1h&startTime=1661965200000&endTime=1662569940000",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"klines"
+							],
+							"query": [
+								{
+									"key": "symbol",
+									"value": "BTCUSDT"
+								},
+								{
+									"key": "limit",
+									"value": "1000",
+									"description": "Default 500; max 1500."
+								},
+								{
+									"key": "interval",
+									"value": "1h",
+									"description": "1m, 1h, 1d, etc"
+								},
+								{
+									"key": "startTime",
+									"value": "1661965200000",
+									"description": "1 September in MS"
+								},
+								{
+									"key": "endTime",
+									"value": "1662569940000",
+									"description": "7 September in MS"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "652"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 14:21:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-mbx-uuid",
+							"value": "0c800f25-49c7-4f5a-86c8-ac374143cd90"
+						},
+						{
+							"key": "x-mbx-used-weight",
+							"value": "1"
+						},
+						{
+							"key": "x-mbx-used-weight-1m",
+							"value": "1"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "X-Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "X-WebKit-CSP",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ab80dbea0300e42fb1524d6c95942bb8.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "CGK50-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "IGDTJ7k21jGeUb_KYTuv1hNM4qZMyMlgVcYG5oIdb6LcLysrqo0V0A=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        1662534000000,\n        \"19107.80000000\",\n        \"20554.27000000\",\n        \"15668.40000000\",\n        \"18801.89000000\",\n        \"3.36534500\",\n        1662537599999,\n        \"64048.38006032\",\n        110,\n        \"1.77995000\",\n        \"34663.41805642\",\n        \"0\"\n    ],\n    [\n        1662537600000,\n        \"18793.68000000\",\n        \"18855.56000000\",\n        \"17311.28000000\",\n        \"18806.14000000\",\n        \"248.35086800\",\n        1662541199999,\n        \"4666871.12695988\",\n        4021,\n        \"151.76302600\",\n        \"2852605.74792815\",\n        \"0\"\n    ],\n    [\n        1662541200000,\n        \"18806.51000000\",\n        \"18815.41000000\",\n        \"18043.65000000\",\n        \"18788.81000000\",\n        \"327.16045800\",\n        1662544799999,\n        \"6145414.47183684\",\n        5733,\n        \"194.97343500\",\n        \"3662531.95948291\",\n        \"0\"\n    ],\n    [\n        1662544800000,\n        \"18789.51000000\",\n        \"18820.60000000\",\n        \"18573.63000000\",\n        \"18747.98000000\",\n        \"332.71579700\",\n        1662548399999,\n        \"6241090.58377177\",\n        5396,\n        \"190.19781400\",\n        \"3567697.61643479\",\n        \"0\"\n    ],\n    [\n        1662548400000,\n        \"18747.98000000\",\n        \"18774.11000000\",\n        \"18698.85000000\",\n        \"18740.17000000\",\n        \"351.98321000\",\n        1662551999999,\n        \"6595886.27054583\",\n        5734,\n        \"224.75074000\",\n        \"4211593.40179320\",\n        \"0\"\n    ],\n    [\n        1662552000000,\n        \"18740.17000000\",\n        \"18782.91000000\",\n        \"18677.21000000\",\n        \"18773.60000000\",\n        \"368.98174300\",\n        1662555599999,\n        \"6911302.68320079\",\n        5935,\n        \"240.09648900\",\n        \"4497273.03381970\",\n        \"0\"\n    ],\n    [\n        1662555600000,\n        \"18773.60000000\",\n        \"18928.04000000\",\n        \"18771.40000000\",\n        \"18842.15000000\",\n        \"424.28376200\",\n        1662559199999,\n        \"7999768.18720700\",\n        6892,\n        \"298.89332400\",\n        \"5635200.77720465\",\n        \"0\"\n    ],\n    [\n        1662559200000,\n        \"18841.48000000\",\n        \"18960.72000000\",\n        \"18814.83000000\",\n        \"18904.27000000\",\n        \"433.69722000\",\n        1662562799999,\n        \"8191815.02269108\",\n        7237,\n        \"292.91218800\",\n        \"5532662.54275498\",\n        \"0\"\n    ],\n    [\n        1662562800000,\n        \"18905.60000000\",\n        \"18934.68000000\",\n        \"18850.65000000\",\n        \"18871.40000000\",\n        \"344.78051400\",\n        1662566399999,\n        \"6514494.73891613\",\n        6093,\n        \"213.54505800\",\n        \"4034829.25008272\",\n        \"0\"\n    ],\n    [\n        1662566400000,\n        \"18871.40000000\",\n        \"18973.88000000\",\n        \"18798.48000000\",\n        \"18914.91000000\",\n        \"383.88971900\",\n        1662569999999,\n        \"7258710.83523408\",\n        6623,\n        \"257.24440400\",\n        \"4864000.95947702\",\n        \"0\"\n    ]\n]"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{api_key}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "api_key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"const ts  = Date.now();",
+					"pm.environment.set(\"timestamp\", ts);",
+					"",
+					"let paramsObject = {};",
+					"",
+					"const binance_api_secret = pm.environment.get(\"api_secret\");",
+					"",
+					"const parameters = pm.request.url.query;",
+					"",
+					"parameters.map((param) => {",
+					"    if (param.key != 'signature' && ",
+					"        param.key != 'timestamp' && ",
+					"        !is_empty(param.value) &&",
+					"        !is_disabled(param.disabled)) {",
+					"            paramsObject[param.key] = param.value;",
+					"            //console.log(encodeURIComponent(param.value));",
+					"            //pm.environment.set(param.key, encodeURIComponent(param.value));",
+					"    }",
+					"})",
+					"        ",
+					"Object.assign(paramsObject, {'timestamp': ts});",
+					"",
+					"if (binance_api_secret) {",
+					"    const queryString = Object.keys(paramsObject).map((key) => {",
+					"        return `${key}=${paramsObject[key]}`;",
+					"    }).join('&');",
+					"    console.log(queryString);",
+					"    const signature = CryptoJS.HmacSHA256(queryString, binance_api_secret).toString();",
+					"    pm.environment.set(\"signature\", signature);",
+					"}",
+					"",
+					"",
+					"function is_disabled(str) {",
+					"    return str == true;",
+					"}",
+					"",
+					"function is_empty(str) {",
+					"    if (typeof str == 'undefined' ||",
+					"        !str || ",
+					"        str.length === 0 || ",
+					"        str === \"\" ||",
+					"        !/[^\\s]/.test(str) ||",
+					"        /^\\s*$/.test(str) ||",
+					"        str.replace(/\\s/g,\"\") === \"\")",
+					"    {",
+					"        return true;",
+					"    }",
+					"    else",
+					"    {",
+					"        return false;",
+					"    }",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/",
 					"protocol": "https",
 					"host": [
 						"virtserver",
@@ -23,18 +23,26 @@
 						"sepulsa",
 						"RentABook-API",
 						"1.0.0",
-						"book"
+						"book",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "New Request",
+					"name": "Book",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/",
 							"protocol": "https",
 							"host": [
 								"virtserver",
@@ -45,7 +53,15 @@
 								"sepulsa",
 								"RentABook-API",
 								"1.0.0",
-								"book"
+								"book",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -55,7 +71,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Tue, 13 Sep 2022 12:26:08 GMT"
+							"value": "Tue, 13 Sep 2022 14:39:51 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -105,7 +121,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/?id=1",
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/:id",
 					"protocol": "https",
 					"host": [
 						"virtserver",
@@ -117,24 +133,31 @@
 						"RentABook-API",
 						"1.0.0",
 						"book",
-						""
+						":id"
 					],
 					"query": [
 						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
 							"key": "id",
-							"value": "1"
+							"value": "1234"
 						}
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "New Request",
+					"name": "Book by id",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/?id=1",
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/:id",
 							"protocol": "https",
 							"host": [
 								"virtserver",
@@ -146,12 +169,19 @@
 								"RentABook-API",
 								"1.0.0",
 								"book",
-								""
+								":id"
 							],
 							"query": [
 								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
 									"key": "id",
-									"value": "1"
+									"value": "1234"
 								}
 							]
 						}
@@ -162,7 +192,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Tue, 13 Sep 2022 12:36:11 GMT"
+							"value": "Tue, 13 Sep 2022 14:38:06 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -170,7 +200,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "153"
+							"value": "149"
 						},
 						{
 							"key": "Connection",
@@ -202,7 +232,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"created_at\": \"2019-02-18T00:00:00\",\n        \"updated_at\": \"2019-02-18T00:00:00\",\n        \"deleted_at\": \"2019-02-18T00:00:00\",\n        \"id\": 1234,\n        \"title\": \"Judul Buku Satu\",\n        \"isbn\": \"1-234-5678-9101112-13\",\n        \"writer\": \"Dr. Who\"\n    }\n]"
+					"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"id\": 1234,\n    \"title\": \"Judul Buku Satu\",\n    \"isbn\": \"1-234-5678-9101112-13\",\n    \"writer\": \"Dr. Who\"\n}"
 				}
 			]
 		},
@@ -334,7 +364,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/?id=1234",
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
 					"protocol": "https",
 					"host": [
 						"virtserver",
@@ -346,12 +376,13 @@
 						"RentABook-API",
 						"1.0.0",
 						"book",
-						""
+						"1234"
 					],
 					"query": [
 						{
 							"key": "id",
-							"value": "1234"
+							"value": "1234",
+							"disabled": true
 						}
 					]
 				}
@@ -446,12 +477,12 @@
 			]
 		},
 		{
-			"name": "New Request",
+			"name": "Delete book by id",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/?id=1234",
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/:id",
 					"protocol": "https",
 					"host": [
 						"virtserver",
@@ -463,9 +494,16 @@
 						"RentABook-API",
 						"1.0.0",
 						"book",
-						""
+						":id"
 					],
 					"query": [
+						{
+							"key": "id",
+							"value": "1234",
+							"disabled": true
+						}
+					],
+					"variable": [
 						{
 							"key": "id",
 							"value": "1234"
@@ -475,12 +513,12 @@
 			},
 			"response": [
 				{
-					"name": "New Request",
+					"name": "Delete book by id",
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/:id",
 							"protocol": "https",
 							"host": [
 								"virtserver",
@@ -492,13 +530,19 @@
 								"RentABook-API",
 								"1.0.0",
 								"book",
-								"1234"
+								":id"
 							],
 							"query": [
 								{
 									"key": "id",
 									"value": "1234",
 									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1234"
 								}
 							]
 						}
@@ -509,7 +553,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Tue, 13 Sep 2022 12:52:19 GMT"
+							"value": "Tue, 13 Sep 2022 14:37:28 GMT"
 						},
 						{
 							"key": "Content-Type",
